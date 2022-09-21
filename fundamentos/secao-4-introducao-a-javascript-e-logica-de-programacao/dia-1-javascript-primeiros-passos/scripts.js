@@ -46,3 +46,17 @@ else {
     console.log("zero");
 }
 
+// ----
+
+let angA = 45;
+let angB = 45;
+let angC = 90;
+let triangulo;
+
+if (angA + angB + angC === 180) {
+    triangulo = true;
+}
+else {
+    triangulo = false;
+}
+console.log(triangulo);
