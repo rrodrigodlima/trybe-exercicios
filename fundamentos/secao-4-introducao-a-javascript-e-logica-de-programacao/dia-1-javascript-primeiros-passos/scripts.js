@@ -32,3 +32,17 @@ else if (c > a && c > b) {
     console.log(c);
 }
 
+//----------
+
+let parametro = true;
+
+if (parametro === true) {
+    console.log("positivo");
+}
+else if (parametro === false) {
+    console.log("negative");
+}
+else {
+    console.log("zero");
+}
+
