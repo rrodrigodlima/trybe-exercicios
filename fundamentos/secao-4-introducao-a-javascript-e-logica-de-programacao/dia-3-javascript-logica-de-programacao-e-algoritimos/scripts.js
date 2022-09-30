@@ -43,6 +43,10 @@ for (let index = 0; index < array.length; index += 1) {
 console.log(biggestWord);
 console.log(smallestWord);
 
+
+// maior numero primo
+
+
 let biggestPrimeNumber = 0;
 function maiorPrimo(limite){
 
@@ -60,3 +64,4 @@ function maiorPrimo(limite){
     return biggestPrimeNumber;
 }
 console.log(maiorPrimo(100));
+
