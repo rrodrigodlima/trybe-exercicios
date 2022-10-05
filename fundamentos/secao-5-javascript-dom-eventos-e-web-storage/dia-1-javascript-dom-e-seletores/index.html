@@ -61,10 +61,7 @@
       function mudaTexto(id,texto){
        document.getElementById(id).innerText=texto;
       }
-
       mudaTexto('muda','Um excelente programador, bem remunerado e feliz com o entorno.')
-
-      
 
       function changeToGreen(classe,cor){
         const quadradoAmarelo = document.getElementsByClassName(classe)[0];
@@ -72,7 +69,36 @@
       }
       changeToGreen('main-content','rgb(76,164,109)')
 
-      
+      function changeToWhite(classe,cor){
+        const quadradoVermelho = document.getElementsByClassName(classe)[0];
+        quadradoVermelho.style.backgroundColor= cor;
+      }
+      changeToWhite('center-content','white')
+
+      function corrigeTexto(tag,texto){
+        const corrige = document.getElementsByTagName(tag)[0];
+        corrige.innerText=texto;
+      }
+      corrigeTexto('h1','Exercício - JavaScript')
+
+      function pMaiusculo (){
+        const tag1 = document.getElementsByTagName('p')[0];
+        tag1.innerHTML = tag1.innerHTML.toUpperCase();
+      }
+      pMaiusculo()
+
+      function showParagraphs (){
+        const paragraph = document.getElementsByTagName('p');
+        for (let index =0 ; index < paragraph.length; index+=1){
+            console.log(paragraph[index].innerHTML)
+        }
+      }
+      showParagraphs()
+
+
+
+
+
 
 
 
