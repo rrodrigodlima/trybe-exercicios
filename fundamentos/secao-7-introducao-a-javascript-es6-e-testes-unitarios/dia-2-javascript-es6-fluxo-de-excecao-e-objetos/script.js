@@ -102,8 +102,18 @@ const verifyPair = (obj,key,value) => {
   return isEqual;
 }
 
-const mathClass = () => parseInt(lesson1.numeroEstudantes) + parseInt(lesson3.numeroEstudantes);
-console.log(mathClass());
+// const mathClass = () => parseInt(lesson1.numeroEstudantes) + parseInt(lesson3.numeroEstudantes);
+// console.log(mathClass());
 
-const teacherClass = (obj,teacher) =>
+const getNumberOfStudentsMath = (obj) => {
+  let total = 0; // variavel para armazenar valor
+  const array = Object.keys(obj); // array 
+  for (index in array) {
+    if(obj[array[index]].materia === 'Matemática') {
+    total += obj[array[index]].numeroEstudantes;
+    }
+  }
+  return total;
+}
+console.log(getNumberOfStudentsMath(allLessons));
 
