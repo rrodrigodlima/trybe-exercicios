@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML Semantico</title>
+    <style>
+
+        main {
+            background-color: green;
+            display: inline-block;
+        }
+
+        li{
+            display: inline-block;
+            padding: 20px;
+            background-color: lightgreen;
+            border-radius: 10%;
+        }
+        nav {
+            border: 2px solid purple;
+        }
+
+        li:hover {
+            background-color: aqua;
+        }
+
+        li:active {
+            font-size: smaller;
+        }
+
+        article { 
+            border: 10px solid purple;
+            display: block;
+                        
+        }
+
+        table {
+            text-align: left;
+            margin: auto;
+            border: 2px solid purple;
+            vertical-align: top;
+            
+        }
+
+        img {
+            width: 200px;
+            display: inline-block;
+            
+        }
+        
+        span {
+            display: inline-block;
+        }
+
+        aside {
+            border: 2px solid lime;
+            display: inline-block;
+            left: 1px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Soco a 80km/h: Conheça o Stomatopoda.</h1>
+    </header>
+    <nav class="site_nav">
+        <ul>
+            <li><a href="">Página Inicial</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="prc">
+
+        <article id="artigo1">
+            <h2>Fatos sobre o Stomatopoda.</h2>
+            <section id="sessao">
+                <h3>Informações Gerais</h3>
+                <img class="img" src="https://static.inaturalist.org/photos/30437316/large.jpg" alt="stomatopoda">
+                <span>Stomatopoda ( <em> Odontodactylus scyllarus.</em>), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.
+                </span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Reino:</td>
+                            <td>Animalia</td>
+                        </tr>
+                        <tr>
+                            <td>Filo:</td>
+                            <td>Arthropoda</td>
+                        </tr>
+                        <tr>
+                            <td>Subfilo:</td>
+                            <td>Crustacea</td>
+                        </tr>
+                        <tr>
+                            <td>Classe:</td>
+                            <td>Malacostraca</td>
+                        </tr>
+                        <tr>
+                            <td>Subclasse:</td>
+                            <td>Hoplocarida</td>
+                        </tr>
+                        <tr>
+                            <td>Ordem:</td>
+                            <td>Stomatopoda
+                            Latreille, 1817</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </section>
+            <section>
+                <h3>Socão</h3>
+                <img class="img" src="http://4.bp.blogspot.com/-nCRuuIIK7Bk/VVUbUSNT16I/AAAAAAAAA8M/CP3mDt2s6Gk/s1600/uw-2010-06-11.jpg" alt="stomatopoda">
+                <span>As maiores esmagadoras, tais como exemplares de Odontodactylus scyllarus, são capazes de desferir um dos mais rápidos e violentos golpes do reino animal, um soco que pode apresentar a velocidade de um tiro calibre .22 (equivalente a 720 km/h) e uma pressão de impacto de 600 N/cm².[3] Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.[4][5]</span>
+            </section>
+            <section>
+                <h3>Visão</h3>
+                <img class="img" src="https://1.bp.blogspot.com/-sxoH9irGQiQ/WwWPTi0VXaI/AAAAAAAAP58/S_qf-RLJS7M-b2Pq5zv21dJyBZ87D7PlQCLcBGAs/s1600/La-gamba-mantis-tiene-un-sistema-de-vision-unico-en-el-reino-animal.jpg" alt="stomatopoda">
+                <span>Esses animais possuem o mais complexo sistema de visão de cores do mundo animal, pois enxergam 12 cores primárias, correspondentes aos 12 pigmentos distintos presentes em sua retina. </span>
+            </section>
+            <section>
+                <h4>Referencias Bibliograficas</h4>
+                <a href="https://pt.wikipedia.org/wiki/Stomatopoda">Wikipédia</a>
+            </section>
+        </article>           
+    </main>
+    <aside>
+        <div> 
+            <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Video</a>
+        </div>
+        
+    </aside>
+    <footer>
+        "Conteúdo compilado por Rodrigo Lima, 2022".
+    </footer>
+  </body>
+</html>
