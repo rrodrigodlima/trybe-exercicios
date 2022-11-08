@@ -1,5 +1,5 @@
 const books = require('./biblioteca');
 
-const file = books.map((book) => 
+const formatedBookNames = books.map((book) => 
 `${book.name} - ${book.genre} - ${book.author.name}`);
-console.log(file);
+console.log(formatedBookNames);
