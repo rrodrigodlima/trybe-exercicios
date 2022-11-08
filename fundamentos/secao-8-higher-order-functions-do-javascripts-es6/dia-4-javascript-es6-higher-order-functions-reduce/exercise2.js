@@ -63,8 +63,6 @@ const books = [
 
 const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-function reduceNames() {
-  return books.reduce((acc, curr) => acc.concat(curr))
-}
+const reduceNames = books.reduce((acc, book) => `${acc} ${book.author.name}.`, '')
 
-console.log(reduceNames(books));
+console.log(reduceNames);
