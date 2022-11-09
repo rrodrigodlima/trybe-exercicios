@@ -8,5 +8,17 @@ const names = [
 const expectedResult = 20;
 
 function containsA() {
-  const countA = 
+  let times = 0;
+  names.forEach((name) => {
+    const lettersFromName = name.split('');
+    times += lettersFromName.reduce((lettersAInName, currentLetter) => {
+      if (currentLetter === 'a' || currentLetter === 'A') {
+        return lettersAInName + 1;
+      }
+      return lettersAInName;
+    }, 0);
+  });
+  return times;
 }
+
+console.log(containsA(names));
