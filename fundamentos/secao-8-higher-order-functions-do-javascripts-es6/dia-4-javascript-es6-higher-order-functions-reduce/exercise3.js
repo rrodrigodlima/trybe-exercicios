@@ -11,8 +11,9 @@ function containsA() {
   let times = 0;
   names.forEach((name) => {
     const lettersFromName = name.split('');
+
     times += lettersFromName.reduce((lettersAInName, currentLetter) => {
-      if (currentLetter === 'a' || currentLetter === 'A') {
+      if (currentLetter.toLowerCase() === 'a') {
         return lettersAInName + 1;
       }
       return lettersAInName;
