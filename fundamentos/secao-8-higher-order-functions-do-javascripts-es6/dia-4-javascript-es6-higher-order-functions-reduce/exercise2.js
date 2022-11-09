@@ -61,8 +61,30 @@ const books = [
   },
 ];
 
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+// const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-const reduceNames = books.reduce((acc, book) => `${acc} ${book.author.name}.`, '')
+const reduceNames = books.reduce((acc, book) => `${acc} ${book.author.name},`, '');
 
 console.log(reduceNames);
+
+// const expectedResult = 43;
+
+
+function averageAge () {
+  const numOfBooks = books.length;
+  const sumOfAges = books.reduce((sum, book) => (sum + (book.releaseYear - book.author.birthYear)), 0);
+  return sumOfAges / numOfBooks;
+}
+
+console.log(averageAge(books));
+ 
+function longestNamedBook() {
+  return books.reduce((biggestBook, currentBook) => {
+    if (currentBook.name.length > biggestBook.name.length) {
+      return currentBook;
+    }
+    return biggestBook;
+  });
+}
+
+console.log(longestNamedBook(books));
