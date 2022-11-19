@@ -1,7 +1,7 @@
 {
   "name": "dia-1-ambiente-de-desenvolvimento",
   "version": "1.0.0",
-  "description": "",
+  "description": "Validador",
   "main": "index.js",
   "scripts": {
     "dev": "vite --open",
@@ -9,5 +9,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0",
+    "vite": "^3.2.4"
+  },
+  "type": "module"
 }
