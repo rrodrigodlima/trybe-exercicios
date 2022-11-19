@@ -1,0 +1,13 @@
+{
+  "name": "dia-1-ambiente-de-desenvolvimento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
