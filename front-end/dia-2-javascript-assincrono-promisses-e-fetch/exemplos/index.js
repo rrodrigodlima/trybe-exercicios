@@ -33,4 +33,5 @@ rejectedPromise()
   })
   .catch((error) => {
     console.log(`rejectedPromise: ${error.message}`);
-  });
+  })
+  .finally(() => console.log('Fim da execução da segunda promise.'));
