@@ -25,7 +25,6 @@ function renderCoins(coins) {
 
   coinsArray.forEach((coin) => {
     const [coinName, value] = coin;
-
     const li = document.createElement('li');
 
     li.textContent = `${coinName} - ${value}`;

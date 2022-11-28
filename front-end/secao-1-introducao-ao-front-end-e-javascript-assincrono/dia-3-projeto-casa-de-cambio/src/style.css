@@ -2,16 +2,15 @@ body{
   background: #282C33;
 }
 h1{
-  left: 306px;
-  top: 63px;
  
-  font-family: Fira Code;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 79px;
-  letter-spacing: 0em;
-  text-align: left;  
   
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79px;
+  
+  color: #FFFFFF;
 }
 
 label{
@@ -79,12 +78,12 @@ button{
 }
 
 section{
-  
+  overflow: auto;
   width: 900px;
   height: 583px;
   left: 306px;
   top: 290px;
-
+  
   background: rgba(255, 255, 255, 0.06);
   border-radius: 20px;
 }
