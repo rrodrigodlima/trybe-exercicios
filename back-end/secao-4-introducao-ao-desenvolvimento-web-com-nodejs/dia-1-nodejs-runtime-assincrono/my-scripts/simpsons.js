@@ -1,16 +1,17 @@
 const fs = require('fs').promises;
 
-async function simpsonsData() {
+async function readSimpsonsData() {
   try {
     const rawdata = await fs.readFile('./simpsons.json', 'utf-8');
     const simpsons = JSON.parse(rawdata);
-    for (let i = 0; i < simpsons.length; i++) {
-      console.log(`${simpsons[i].id} - ${simpsons[i].name}`)
-    } 
+    return simpsons
   } catch (err) {
     console.error(`Erro ao ler o arquivo: ${err.message}`);
   }
 }
 
-simpsonsData()
+readSimpsonsData()
 
+module.exports = {
+  readSimpsonsData
+}
