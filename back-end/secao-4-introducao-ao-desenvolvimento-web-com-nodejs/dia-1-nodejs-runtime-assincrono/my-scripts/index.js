@@ -10,3 +10,14 @@ async function main() {
 }
 
 main()
+
+async function allSimpsons() {
+  const simpsons = await readSimpsonsData();
+
+  for (let i = 0; i < simpsons.length; i++) {
+    console.log(`${simpsons[i].id} - ${simpsons[i].name}`)
+  }
+
+}
+
+allSimpsons()
